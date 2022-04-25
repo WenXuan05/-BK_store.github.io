@@ -1,313 +1,62 @@
-<!DOCTYPE html>
+<DOC.TYPE html>
 <html>
     <head>
-        <meta charset = "UTF-8">
-        <title>WebsiteName</title>
-        <link rel="stylesheet" href="Menu.css">
-
-        <script type = "text/javascript">
-            function displayNextImage() {
-                x = (x === images.length - 1) ? 0 : x + 1;
-                document.getElementById("img").src = images[x];
-            }
-  
-            function displayPreviousImage() {
-                x = (x <= 0) ? images.length - 1 : x - 1;
-                document.getElementById("img").src = images[x];
-            }
-  
-            function startTimer() {
-                setInterval(displayNextImage, 8000);
-            }
-  
-            var images = [], x = -1;
-            images[0] = "main_book_pic/pg1.png";
-            images[1] = "main_book_pic/pg2.png";
-            images[2] = "main_book_pic/pg3.jpg";
-            images[3] = "main_book_pic/pg4.jpeg";
-            images[4] = "main_book_pic/pg5.png";
-        </script>
-                <script type = "text/javascript">
-                    function nextImageLink() {
-                        x = (x === images.length - 1) ? 0 : x + 1;
-                        document.getElementById("img_href").href = hyperREF[x];
-                    }
-          
-                    function previousImagelink() {
-                        x = (x <= 0) ? images.length - 1 : x - 1;
-                        document.getElementById("img_href").href = hyperREF[x];
-                    }
-          
-                    function startTimer() {
-                        setInterval(nextImageLink, 8000);
-                    }
-                    var hyperREF = images;
-                    hyperREF = [0] = " ";
-                    hyperREF = [1] = " ";
-                    hyperREF = [2] = " ";
-                    hyperREF = [3] = " ";
-                    hyperREF = [4] = " ";
-                </script>
+        <meta charset="UTF-8">
+        <title>Java Jam Coffee House Menu</title>  
+        <link rel="stylesheet" href="javajam.css">
     </head>
-    <body  onload="startTimer()">
+    <body>
+        <div id="wrapper">
         <header>
-            <img class="logo" src="icons/assignment_logo.png" alt="Book logo">
-            <input type="text" placeholder="Search...">
-            <a href=" "><img class="search_icon" src="icons/search_icon.png" alt="searching icon"></a>             
-            <a href=" "><img class="login_icon" src="icons/login_icon.png" alt="guest login icon"></a>
-            <a href=" "><img class="wishlist_icon" src="icons/wishlist_icon.png" alt="wishlist icon"></a>
-            <a href=" "><img class="cart_icon" src="icons/cart_icon.png" alt="Shopping cart icon"></a>
+            <h1>JavaJam Coffee House</h1>
         </header>
-        <nav id = "dropDown">
-            <a href=" " class="A">All</a>
-            <a href=" " class="B">TopSales</a>
-            <a href=" " class="C">Fiction</a>
-            <a href=" " class="D">NonFiction</a>
-            <a href=" " class="E">Teen</a>
-            <a href=" " class="F">Kids</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html" >Home</a>&nbsp;</li>
+                <li><a href = "menu.html"> Music </a>&nbsp;</li>
+                <li><a href = "music.html"> Music </a>&nbsp;</li>
+                <li><a href = "Jobs.html"> Jobs </a>&nbsp;</li>
+            </ul>
         </nav>
         <main>
-            <div class="main_image">
-                <img class="left_arrow" type="button" src="icons/arrow_icon.png" onclick="displayPreviousImage()" align="right">
-                <a href=" " id="img_href"><img id="img" src="main_book_pic/pg1.png"/></a>
-                <img class="right_arrow" type="button" src="icons/arrow_icon.png" onclick="displayNextImage()" align="left">
-            </div>
-            <div class="category"><hr>
-                <h1>Top Sales Books 2021</h1><hr>
-                <div class="booklist">
-                    <div class="book">
-                        <a href=" "><img class="A A1" src="Book_A/book_A1.jpg" title="People We Meet on Vacation"></a>
-                        <div class="description">
-                            <a href=" "><h2>People We Meet on Vacation</h2></a>
-                            <p>~ by Emily Henry</p>
-                            Poppy and Alex. Alex and Poppy. They have nothing in common. She's a wild child; he wears khakis. She has insatiable wanderlust; he prefers to stay home with a book. And somehow, ever since a fateful car share home from college many years ago, they are the very best of friends. For most of the year they live far apart--she's in New York City, and he's in their small hometown--but every summer, for a decade, they have taken one glorious week of vacation together....<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.4/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="A A2" src="Book_A/book_A2.jpg" title="Malibu Rising"></a>
-                        <div class="description">
-                            <a href=" "><h2>Malibu Rising</h2></a>
-                            <p>by Taylor Jenkins Reid</p>
-                            Malibu: August 1983. It's the day of Nina Riva's annual end-of-summer party, and anticipation is at a fever pitch. Everyone wants to be around the famous Rivas: Nina, the talented surfer and supermodel; brothers Jay and Hud, one a championship surfer, the other a renowned photographer; and their adored baby sister, Kit. Together the siblings are a source of fascination in Malibu and the world over--especially as the offspring of the legendary singer Mick Riva....<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.5/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="A A3" src="Book_A/book_A3.jpg" title="The Last Thing He Told Me"></a>
-                        <div class="description">
-                            <a href=" "><h2>The Last Thing He Told Me</h2></a>
-                            <p>by Laura Dave</p>
-                            Before Owen Michaels disappears, he smuggles a note to his beloved wife of one year: Protect her. Despite her confusion and fear, Hannah Hall knows exactly to whom the note refers—Owen’s sixteen-year-old daughter, Bailey. Bailey, who lost her mother tragically as a child. Bailey, who wants absolutely nothing to do with her new stepmother....<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.2/5.0
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href=" " class="view_all">View All</a>
-
-            <div class="category"><hr>
-                <h1>Monthly Picks Fiction Books</h1><hr>
-                <div class="booklist">
-                    <div class="book">
-                        <a href=" "><img class="B B1" src="Book_B/book_B1.jpg" title="The Stranger in the Lifeboat"></a>
-                        <div class="description">
-                            <a href=" "><h2>The Stranger in the Lifeboat</h2></a>
-                            <p>by Mitch Albom</p>
-                            What would happen if we called on God for help and God actually appeared? In Mitch Albom's profound new novel of hope and faith, a group of shipwrecked passengers pull a strange man from the sea. He claims to be “the Lord.” And he says he can only save them if they all believe in him....<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.7/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="B B2" src="Book_B/book_B2.jpg" title="The Hare"></a>
-                        <div class="description">
-                            <a href=" "><h2>The Hare</h2></a>
-                            <p>by Meelanie Finn</p>
-                            The Hare is an affecting portrait of Rosie Monroe, of her resilience and personal transformation under the pin of the male gaze. Raised to be obedient by a stern grandmother in a blue-collar town in Massachusetts, Rosie accepts a scholarship to art school in New York City in the 1980s. One morning ....<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.1/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="B B4" src="Book_B/book_B4.jpg" title="Every Last Fear"></a>
-                        <div class="description">
-                            <a href=" "><h2>Every Last Fear</h2></a>
-                            <p>by Alex Finlay</p>
-                            After a late night of partying, NYU student Matt Pine returns to his dorm room to devastating news: nearly his entire family—his mom, his dad, his little brother and sister—have been found dead from an apparent gas leak while vacationing in Mexico. The local police claim it was an accident, but the FBI and State Department seem far less certain—and they won’t tell Matt why.....<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.5/5.0
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href=" " class="view_all">View All</a>
-
-            <div class="category"><hr>
-                <h1>Monthly Picks NonFiction Books</h1><hr>
-                <div class="booklist">
-                    <div class="book">
-                        <a href=" "><img class="C C1" src="Book_C/book_C1.jpg" title="Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity"></a>
-                        <div class="description">
-                            <a href=" "><h2>Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity</h2></a>
-                            <p>by Katherine Boo</p>
-                            In this breathtaking book by Pulitzer Prize winner Katherine Boo, a bewildering age of global change and inequality is made human through the dramatic story of families striving toward a better life in Annawadi, a makeshift settlement in the shadow of luxury hotels near the Mumbai airport.<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.0/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="C C2" src="Book_C/book_C2.jpg" title="Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"></a>
-                        <div class="description">
-                            <a href=" "><h2>Freakonomics: A Rogue Economist Explores the Hidden Side of Everything</h2></a>
-                            <p>by Steven D. Levitt, Stephen J Dubner</p>
-                            Which is more dangerous, a gun or a swimming pool?<br>
-                            What do schoolteachers and sumo wrestlers have in common?<br>
-                            How much do parents really matter?<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.1/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="C C3" src="Book_C/book_C3.jpg" title="Far from the Tree: Parents, Children, and the Search for Identity"></a>
-                        <div class="description">
-                            <a href=" "><h2>Far from the Tree: Parents, Children, and the Search for Identity</h2></a>
-                            <p>by Andrew Solomon</p>
-                            Solomon's startling proposition in Far from the Tree is that being exceptional is at the core of the human condition—that difference is what unites us. He writes about families coping with deafness, dwarfism, Down syndrome, autism, schizophrenia, or multiple severe disabilities; with children who are prodigies, who are conceived in rape, who become criminals, who are transgender. While each of these characteristics is potentially isolating, the experience of difference within families is universal, and Solomon documents triumphs of love over prejudice in every chapter.<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.3/5.0
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href=" " class="view_all">View All</a>
-
-            <div class="category"><hr>
-                <h1>Best Book for Teen</h1><hr>
-                <div class="booklist">
-                    <div class="book">
-                        <a href=" "><img class="D D1" src="Book_D/book_D1.jpg" title="The Perks of Being a Wallflower"></a>
-                        <div class="description">
-                            <a href=" "><h2>The Perks of Being a Wallflower</h2></a>
-                            <p>by Stephen Chbosky</p>
-                            The critically acclaimed debut novel from Stephen Chbosky, Perks follows observant “wallflower” Charlie as he charts a course through the strange world between adolescence and adulthood. First dates, family drama, and new friends. Sex, drugs, and The Rocky Horror Picture Show. Devastating loss, young love, and life on the fringes. Caught between trying to live his life and trying to run from it, Charlie must learn to navigate those wild and poignant roller-coaster days known as growing up.<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.5/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="D D2" src="Book_D/book_D2.jpg" title="Angela's Ashes"></a>
-                        <div class="description">
-                            <a href=" "><h2>Angela's Ashes</h2></a>
-                            <p>by Frank McCourt</p>
-                            Malibu: August 1983. It's the day of Nina Riva's annual end-of-summer party, and anticipation is at a fever pitch. Everyone wants to be around the famous Rivas: Nina, the talented surfer and supermodel; brothers Jay and Hud, one a championship surfer, the other a renowned photographer; and their adored baby sister, Kit. Together the siblings are a source of fascination in Malibu and the world over--especially as the offspring of the legendary singer Mick Riva....<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.5/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="D D3" src="Book_D/book_D3.jpg" title="Aristotle and Dante Discover the Secrets of the Universe"></a>
-                        <div class="description">
-                            <a href=" "><h2>Malibu Rising</h2></a>
-                            <p>by Taylor Jenkins Reid</p>
-                            “When I look back on my childhood I wonder how I managed to survive at all. It was, of course, a miserable childhood: the happy childhood is hardly worth your while. Worse than the ordinary miserable childhood is the miserable Irish childhood, and worse yet is the miserable Irish Catholic childhood.”<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.3/5.0
-                        </div>
-                    </div> 
-                </div>
-            </div>
-            <a href=" " class="view_all">View All</a>
-
-            <div class="category"><hr>
-                <h1>Best Book for Kids</h1><hr>
-                <div class="booklist">
-                    <div class="book">
-                        <a href=" "><img class="E E1" src="Book_E/book_E1.jpg" title="Where the Wild Things Are"></a>
-                        <div class="description">
-                            <a href=" "><h2>Where the Wild Things Are</h2></a>
-                            <p>by Maurice Sendak</p>
-                            Introduce a new generation to Max's imaginative journey with this special anniversary edition. Let the wild rumpus continue as this classic comes to life like never before with new reproductions of Maurice Sendak's artwork.<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.6/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="E E2" src="Book_E/book_E2.jpg" title="The Snowy Day"></a>
-                        <div class="description">
-                            <a href=" "><h2>The Snowy Day</h2></a>
-                            <p>by Ezra Jack Keats</p>
-                            In 1962, a little boy named Peter put on his snowsuit and stepped out of his house and into the hearts of millions of readers. Universal in its appeal, this story beautifully depicts a child's wonder at a new world, and the hope of capturing and keeping that wonder forever. <br><br>
-                            <img src="icons/star_icon.png" title="rate"> 3.7/5.0
-                        </div>
-                    </div>
-                    <div class="book">
-                        <a href=" "><img class="E E3" src="Book_E/book_E3.jpg" title="Goodnight Moon"></a>
-                        <div class="description">
-                            <a href=" "><h2>Goodnight Moon</h2></a>
-                            <p>by Mangaret Wise Brown, Clement Hurd</p>
-                            In a great green room, tucked away in bed, is a little bunny. "Goodnight room, goodnight moon." And to all the familiar things in the softly lit room—to the picture of the three little bears sitting on chairs, to the clocks and his socks, to the mittens and the kittens, to everything one by one—the little bunny says goodnight.<br><br>
-                            <img src="icons/star_icon.png" title="rate"> 4.4/5.0
-                        </div>
-                    </div> 
-                </div>
-            </div>
-            <a href=" " class="view_all">View All</a>
+            <div id = "heromugs"></div>
+            <h2>Coffee At JavaJam</h2> 
+            <p>Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth
+                taste, the caffeine! Join our Mug Club and get a 10% discount on each cup of coffee
+                you purchase &mdash; ask the barista for details.</p>
+            <!--<dl>
+                <strong><dt>Just Java</dt></strong>
+                    <dd>Regular house blend, decaffeinated coffee, or flavor of the day.</dd>
+                    <dd>Endless Cup $3.00</dd>
+                <strong><dt>Cafe au Lait</dt></strong>
+                    <dd>House blended coffee infused into a smooth, steamed milk.</dd>
+                    <dd>Single $2.00 Double $4.00</dd>
+                <strong><dt>Ice Cappucino</dt></strong>
+                    <dd>Sweetened espresso blended with icy-cold milk and served in a chilled glass</dd>
+                    <dd>Single $4.75 Double $6.00</dd>
+            </dl>-->
+            
+            <table>
+                <tr>
+                    <th>Just Java</th>
+                    <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>Endless Cup $3.00</td>
+                </tr>
+                <tr>
+                    <th>Cafe au Lait</th>
+                    <td>House blended coffee infused into a smooth, steamed milk.<br>Single $2.00 Double $4.00</td>
+                </tr>
+                <tr>
+                    <th>Ice Cappucino</th>
+                    <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>Single $4.75 Double $6.00</td>
+                </tr>
+            </table>
         </main>
+        <br>
+
         <footer>
-            <div>
-                <img src="icons/assignment_logo.png" alt="Logo" class="logo">
-                <div class ="follow_us">
-                    <h6>Follow Us</h6>
-                    <img src="icons/Facebook_icon.png" alt="Facebook Logo" class="icon icon1">
-                    <img src="icons/Twitter_icon.png" alt="Twitter Logo" class="icon icon2">
-                    <img src="icons/Instagram_icon.png" alt="Instagram Logo" class="icon icon3">
-                    <img src="icons/Pinterest_icon.png" alt="pinterest Logo" class="icon icon4">
-                </div>
-            </div>
-            <div class="right_side_footer">
-                <dl>
-                    <a href=" "><dt>F A Q</dt></a>
-                    <a href=" "><dt>C o n t a c t &nbsp; U s</dt></a>
-                    <a href=" "><dt>P r i v a c y &nbsp; & &nbsp; P o l i c y</dt></a>
-                    <a href=" "><dt>T e r m &nbsp; & &nbsp; C o n d i t i o n</dt></a>
-                    <a href=" "><dt>A b o u t &nbsp; U s</dt><br><br></a>
-                </dl>
-                <i><small>&copy; 2022 All Rights Reserve </small></i> &nbsp;|&nbsp; W W W . B O O K S T O R E . M Y
-            </div>
+            <small>Copyright &copy; 2022 JavaJam Coffee House <br></small>
+            <small><a href = "mailto: Ngoi@JJ.com">wenxuan@gmail</a></small>
         </footer>
+        </div>
     </body>
 </html>
-
-
-<!--
-    <a href=" "><img class="A A4" src="Book_A/book_A4.jpg" title="The Lincoin Highway"></a>
-    <a href=" "><img class="A A5" src="Book_A/book_A5.jpg" title="Project Hail Mary"></a>
-    <a href=" "><img class="A A6" src="Book_A/book_A6.jpg" title="The Four Winds"></a>
-    <a href=" "><img class="A A7" src="Book_A/book_A7.jpg" title="Beautiful World, Where Are You"></a>
-    <a href=" "><img class="A A8" src="Book_A/book_A8.jpg" title="Apples Never Fall"></a>
-    <a href=" "><img class="A A9" src="Book_A/book_A9.jpg" title="The Push"></a>
-    <a href=" "><img class="A A10" src="Book_A/book_A10.jpg" title="Klara and the Sun"></a>
-
-    <a href=" "><img class="B B3" src="Book_A/book_A3.jpg" title="The Last Thing He Told Me"></a>
-    <a href=" "><img class="B B5" src="Book_B/book_B5.jpg" title="Fake Account"></a>
-    <a href=" "><img class="B B6" src="Book_B/book_B6.jpg" title="Seven Days in June"></a>
-    <a href=" "><img class="B B7" src="Book_A/book_A7.jpg" title="Beautiful World, Where Are You"></a>
-    <a href=" "><img class="B B8" src="Book_B/book_B8.jpg" title="Good Company"></a>
-    <a href=" "><img class="B B9" src="Book_B/book_B9.jpg" title="Runner"></a>
-    <a href=" "><img class="B B10" src="Book_B/book_B10.jpg" title="The Funny Thing About Norman Foreman"></a>
-
-    <a href=" "><img class="C C4" src="Book_C/book_C4.jpg" title="Minor Feelings: An Asian American Reckoning"></a>
-    <a href=" "><img class="C C5" src="Book_C/book_C5.jpg" title="The Omnivore's Dilemma: A Natural History of Four Meals"></a>
-    <a href=" "><img class="C C6" src="Book_C/book_C6.jpg" title="Fast Food Nation: The Dark Side of the All-American Meal"></a>
-    <a href=" "><img class="C C7" src="Book_C/book_C7.jpg" title="The Sea Around Us"></a>
-    <a href=" "><img class="C C8" src="Book_C/book_C8.jpg" title="Pilgrim at Tinker Creek"></a>
-    <a href=" "><img class="C C9" src="Book_C/book_C9.jpg" title="How the Word Is Passed"></a>
-    <a href=" "><img class="C C10" src="Book_C/book_C10.jpg" title="Grand Canyon"></a>
-
-    <a href=" "><img class="D D4" src="Book_D/book_D4.jpg" title="Between the World and Me"></a>
-    <a href=" "><img class="D D5" src="Book_D/book_D5.jpg" title="The Fault in Our Stars"></a>
-    <a href=" "><img class="D D6" src="Book_D/book_D6.jpg" title="A Long Way Gone: Memoirs of a Boy Soldier"></a>
-    <a href=" "><img class="D D7" src="Book_D/book_D7.jpeg" title="Tiger Eyes"></a>
-    <a href=" "><img class="D D8" src="Book_D/book_D8.jpg" title="The Catcher in the Rye"></a>
-    <a href=" "><img class="D D9" src="Book_D/book_D9.jpg" title="Every Body Looking"></a>
-    <a href=" "><img class="D D10" src="Book_D/book_D10.jpg" title="Dear Martin"></a>
-
-    <a href=" "><img class="E E4" src="Book_E/book_E4.jpg" title="Blueberries for Sal"></a>
-    <a href=" "><img class="E E5" src="Book_E/book_E5.jpg" title="Little Bear"></a>
-    <a href=" "><img class="E E6" src="Book_E/book_E6.jpg" title="Owl Moon"></a>
-    <a href=" "><img class="E E7" src="Book_E/book_E7.jpg" title="The Giving Tree"></a>
-    <a href=" "><img class="E E8" src="Book_E/book_E8.jpg" title="The True Story of the Three Little Pig"></a>
-    <a href=" "><img class="E E9" src="Book_E/book_E9.jpg" title="Tuesday"></a>
-    <a href=" "><img class="E E10" src="Book_E/book_E10.jpg" title="Where the Sidewalk Ends"></a>
--->
